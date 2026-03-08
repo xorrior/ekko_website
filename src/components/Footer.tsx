@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,9 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent-cyan to-accent-purple flex items-center justify-center">
-                <span className="text-background font-bold text-sm">E</span>
-              </div>
+              <Image src="/ekko-logo.png" alt="Ekko logo" width={32} height={32} className="rounded-lg" />
               <span className="text-xl font-bold gradient-text">Ekko</span>
             </div>
             <p className="text-muted text-sm max-w-md leading-relaxed">
