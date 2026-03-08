@@ -40,9 +40,9 @@ export default function Footer() {
           <p className="text-sm text-muted">
             &copy; {new Date().getFullYear()} Ekko. All rights reserved.
           </p>
-          <p className="text-sm text-muted">
-            Your messages. Your device. No middlemen.
-          </p>
+          <Link href="/privacy" className="text-sm text-muted hover:text-accent-cyan transition-colors">
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>
