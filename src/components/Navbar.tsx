@@ -26,9 +26,9 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <Image src="/ekko-logo.png" alt="Ekko logo" width={32} height={32} className="rounded-lg" />
+          <Image src="/ekko-logo.png" alt="Ekko Chat logo" width={32} height={32} className="rounded-lg" />
           <span className="text-xl font-bold tracking-tight">
-            <span className="gradient-text">Ekko</span>
+            <span className="gradient-text">Ekko Chat</span>
           </span>
         </Link>
 
@@ -65,7 +65,7 @@ export default function Navbar() {
             href="/download"
             className="px-5 py-2 text-sm font-semibold rounded-full bg-gradient-to-r from-accent-cyan to-accent-blue text-background hover:shadow-lg hover:shadow-accent-cyan/20 transition-all"
           >
-            Get Ekko
+            Get Ekko Chat
           </Link>
         </div>
 
@@ -121,7 +121,7 @@ export default function Navbar() {
                 onClick={() => setMobileOpen(false)}
                 className="mt-2 px-4 py-3 text-sm font-semibold rounded-full bg-gradient-to-r from-accent-cyan to-accent-blue text-background text-center"
               >
-                Get Ekko
+                Get Ekko Chat
               </Link>
             </div>
           </motion.div>

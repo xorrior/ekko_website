@@ -7,11 +7,11 @@ import PageTransition from "@/components/PageTransition";
 
 const sections = [
   {
-    title: "Why Ekko Exists",
-    content: `Every mainstream messaging app — WhatsApp, Signal, iMessage, Telegram — relies on central servers operated by a single company. Even when messages are encrypted, the server still knows who you're talking to, when, and how often. If the company goes down, gets hacked, or is compelled by a government to hand over data, your communication is at risk.\n\nEkko takes a fundamentally different approach: there is no server. Your messages travel through decentralized networks that no single entity controls. Your identity is a cryptographic key stored only on your device — not an email address, not a phone number, not a username tied to any service.`,
+    title: "Why Ekko Chat Exists",
+    content: `Every mainstream messaging app — WhatsApp, Signal, iMessage, Telegram — relies on central servers operated by a single company. Even when messages are encrypted, the server still knows who you're talking to, when, and how often. If the company goes down, gets hacked, or is compelled by a government to hand over data, your communication is at risk.\n\nEkko Chat takes a fundamentally different approach: there is no server. Your messages travel through decentralized networks that no single entity controls. Your identity is a cryptographic key stored only on your device — not an email address, not a phone number, not a username tied to any service.`,
   },
   {
-    title: "Who Ekko is For",
+    title: "Who Ekko Chat is For",
     items: [
       { label: "Journalists & Activists", desc: "Operating in environments where communication metadata can be dangerous" },
       { label: "Privacy-Conscious Individuals", desc: "Who don't want their social graph harvested" },
@@ -24,28 +24,28 @@ const sections = [
 const transportOverview = [
   {
     name: "Bluetooth (BLE)",
-    desc: "When you're physically near someone (within about 30 feet), Ekko sends messages directly over Bluetooth. No internet needed. This is the fastest path and works even if all networks are down.",
+    desc: "When you're physically near someone (within about 30 feet), Ekko Chat sends messages directly over Bluetooth. No internet needed. This is the fastest path and works even if all networks are down.",
     detail: "Your phone quietly advertises its presence via Bluetooth. When a contact's phone is nearby, the two devices establish an encrypted tunnel and exchange messages instantly.",
   },
   {
     name: "Internet (DHT)",
-    desc: "When you're not nearby, Ekko uses a global peer-to-peer network called a Distributed Hash Table — the same kind of network that powers BitTorrent.",
+    desc: "When you're not nearby, Ekko Chat uses a global peer-to-peer network called a Distributed Hash Table — the same kind of network that powers BitTorrent.",
     detail: "Think of it like a public bulletin board where messages are written in a code only the intended recipient can read. The bulletin board is maintained by thousands of independent computers worldwide.",
   },
   {
     name: "Onion Routing (Tor)",
-    desc: "For maximum privacy, Ekko establishes a direct connection through the Tor network. Messages bounce through multiple encrypted layers so neither party reveals their location.",
+    desc: "For maximum privacy, Ekko Chat establishes a direct connection through the Tor network. Messages bounce through multiple encrypted layers so neither party reveals their location.",
     detail: "Each device creates a hidden address that's only reachable through Tor. Messages travel through three layers of encryption across different countries.",
   },
   {
     name: "Quick Relay (iroh)",
-    desc: "Some networks block direct connections. Ekko uses QUIC to punch through barriers and establish a direct peer-to-peer link.",
+    desc: "Some networks block direct connections. Ekko Chat uses QUIC to punch through barriers and establish a direct peer-to-peer link.",
     detail: "Devices exchange small endpoint IDs through the decentralized network, then connect directly using a protocol faster and more reliable than traditional connections.",
   },
   {
     name: "Mesh Relay (BLE Gossip)",
-    desc: "After a normal Bluetooth exchange, devices share encrypted blobs meant for other people. Every Ekko device acts as a potential courier.",
-    detail: "The relay person can't decrypt messages and doesn't even know who the intended recipients are. This extends Ekko's reach into areas with spotty connectivity.",
+    desc: "After a normal Bluetooth exchange, devices share encrypted blobs meant for other people. Every Ekko Chat device acts as a potential courier.",
+    detail: "The relay person can't decrypt messages and doesn't even know who the intended recipients are. This extends Ekko Chat's reach into areas with spotty connectivity.",
   },
 ];
 
@@ -87,10 +87,10 @@ export default function DocsPage() {
               </div>
             </div>
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">
-              Ekko <span className="gradient-text">Overview</span>
+              Ekko Chat <span className="gradient-text">Overview</span>
             </h1>
             <p className="mt-6 text-lg text-muted max-w-2xl leading-relaxed">
-              Understand how Ekko works, why it exists, and the technology behind
+              Understand how Ekko Chat works, why it exists, and the technology behind
               decentralized, encrypted messaging.
             </p>
             <div className="mt-8 flex gap-4">
@@ -105,7 +105,7 @@ export default function DocsPage() {
         </div>
       </section>
 
-      {/* Why Ekko Exists */}
+      {/* Why Ekko Chat Exists */}
       <section className="py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6">
           {sections.map((section, si) => (
@@ -145,7 +145,7 @@ export default function DocsPage() {
               How Messages Travel
             </h2>
             <p className="mt-4 text-muted">
-              Ekko uses five different communication paths to deliver your
+              Ekko Chat uses five different communication paths to deliver your
               messages. The app automatically selects the best available path.
             </p>
           </AnimatedSection>

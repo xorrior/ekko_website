@@ -5,9 +5,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Ekko — Messaging Without Middlemen",
+  title: "Ekko Chat — Messaging Without Middlemen",
   description:
-    "Ekko is a decentralized, encrypted messaging app. No servers. No accounts. No data collection. Messages travel directly between devices.",
+    "Ekko Chat is a decentralized, encrypted messaging app. No servers. No accounts. No data collection. Messages travel directly between devices.",
 };
 
 export default function RootLayout({

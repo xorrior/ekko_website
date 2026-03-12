@@ -21,7 +21,7 @@ export default function PrivacyPage() {
               Privacy <span className="gradient-text">Policy</span>
             </h1>
             <p className="mt-6 text-lg text-muted max-w-2xl leading-relaxed">
-              Ekko is designed so that we have as little data as possible. This
+              Ekko Chat is designed so that we have as little data as possible. This
               policy explains exactly what is and isn&apos;t visible across each
               transport path.
             </p>
@@ -42,7 +42,7 @@ export default function PrivacyPage() {
             </h2>
             <div className="space-y-4 text-muted leading-relaxed">
               <p>
-                Ekko does not require an account, phone number, email address, or
+                Ekko Chat does not require an account, phone number, email address, or
                 any personally identifiable information to use. Your identity is a
                 cryptographic key pair generated entirely on your device. It never
                 leaves your device and is never transmitted to us or any third party.
@@ -54,7 +54,7 @@ export default function PrivacyPage() {
                 operators, and not by the networks that carry them.
               </p>
               <p>
-                Ekko does not operate central servers that route or store your
+                Ekko Chat does not operate central servers that route or store your
                 messages. Different transport paths involve different third-party
                 infrastructure, and each has different privacy characteristics. We
                 believe you should understand exactly what each one exposes.
@@ -66,7 +66,7 @@ export default function PrivacyPage() {
           <AnimatedSection className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
               <div className="w-8 h-1 rounded-full bg-gradient-to-r from-accent-cyan to-accent-purple" />
-              What Ekko Does Not Collect
+              What Ekko Chat Does Not Collect
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {[
@@ -99,7 +99,7 @@ export default function PrivacyPage() {
             <div className="space-y-4 text-muted leading-relaxed">
               <p>
                 All messages, contacts, and cryptographic keys are stored locally on
-                your device. Ekko does not sync data to the cloud and does not
+                your device. Ekko Chat does not sync data to the cloud and does not
                 maintain any server-side copy of your conversations. If you uninstall
                 the app or lose your device, your data is gone — by design.
               </p>
@@ -113,7 +113,7 @@ export default function PrivacyPage() {
               What Each Transport Exposes
             </h2>
             <p className="text-muted leading-relaxed mb-8">
-              Ekko uses five transport paths to deliver messages. While message
+              Ekko Chat uses five transport paths to deliver messages. While message
               content is always encrypted end-to-end regardless of transport, the
               networks themselves can observe different types of metadata. Here is
               an honest breakdown of what each path exposes.
@@ -219,9 +219,9 @@ export default function PrivacyPage() {
                   Onion Routing (Tor)
                 </h3>
                 <p className="text-sm text-muted leading-relaxed mb-4">
-                  Ekko creates Tor v3 onion hidden services for direct,
+                  Ekko Chat creates Tor v3 onion hidden services for direct,
                   anonymized connections between devices. Messages are routed through
-                  the volunteer-operated Tor network. Ekko does not operate any Tor
+                  the volunteer-operated Tor network. Ekko Chat does not operate any Tor
                   infrastructure.
                 </p>
                 <div className="space-y-2">
@@ -268,7 +268,7 @@ export default function PrivacyPage() {
                   QUIC Relay (iroh)
                 </h3>
                 <p className="text-sm text-muted leading-relaxed mb-4">
-                  Ekko uses the iroh protocol (from n0.computer) for QUIC-based
+                  Ekko Chat uses the iroh protocol (from n0.computer) for QUIC-based
                   connections. Devices first attempt direct peer-to-peer connections
                   via UDP hole-punching. If a direct connection cannot be established,
                   traffic is routed through relay servers operated by n0.computer.
@@ -318,7 +318,7 @@ export default function PrivacyPage() {
                 </h3>
                 <p className="text-sm text-muted leading-relaxed mb-4">
                   After a standard BLE exchange, devices can relay encrypted message
-                  blobs meant for other users. Any Ekko device in range acts as a
+                  blobs meant for other users. Any Ekko Chat device in range acts as a
                   potential courier.
                 </p>
                 <div className="space-y-2">
@@ -358,13 +358,13 @@ export default function PrivacyPage() {
           <AnimatedSection className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
               <div className="w-8 h-1 rounded-full bg-gradient-to-r from-accent-cyan to-accent-purple" />
-              Ekko Managed Services (Planned)
+              Ekko Chat Managed Services (Planned)
             </h2>
             <p className="text-muted leading-relaxed mb-8">
-              Ekko plans to offer optional subscription services that enhance
+              Ekko Chat plans to offer optional subscription services that enhance
               delivery speed and reliability. These services do not change the
               end-to-end encryption guarantee — message content is never readable
-              by Ekko — but they do involve Ekko-operated infrastructure, which
+              by Ekko Chat — but they do involve Ekko Chat-operated infrastructure, which
               changes the privacy characteristics compared to the fully
               decentralized free tier.
             </p>
@@ -381,16 +381,16 @@ export default function PrivacyPage() {
                   </span>
                 </div>
                 <p className="text-sm text-muted leading-relaxed mb-4">
-                  Subscribers would use Ekko-operated DHT infrastructure for push
+                  Subscribers would use Ekko Chat-operated DHT infrastructure for push
                   notifications, extended message retention, and priority publishing.
                 </p>
                 <p className="text-xs font-semibold uppercase tracking-wider text-foreground mb-2">
-                  Additional data visible to Ekko
+                  Additional data visible to Ekko Chat
                 </p>
                 <ul className="space-y-1.5">
                   <li className="flex items-start gap-2 text-sm text-muted">
                     <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 mt-1.5 shrink-0" />
-                    Your device&apos;s IP address when connecting to Ekko DHT nodes
+                    Your device&apos;s IP address when connecting to Ekko Chat DHT nodes
                   </li>
                   <li className="flex items-start gap-2 text-sm text-muted">
                     <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 mt-1.5 shrink-0" />
@@ -411,7 +411,7 @@ export default function PrivacyPage() {
                 <ul className="space-y-1.5">
                   <li className="flex items-start gap-2 text-sm text-muted">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-1.5 shrink-0" />
-                    Message content remains end-to-end encrypted — Ekko infrastructure stores only ciphertext
+                    Message content remains end-to-end encrypted — Ekko Chat infrastructure stores only ciphertext
                   </li>
                   <li className="flex items-start gap-2 text-sm text-muted">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-1.5 shrink-0" />
@@ -431,16 +431,16 @@ export default function PrivacyPage() {
                   </span>
                 </div>
                 <p className="text-sm text-muted leading-relaxed mb-4">
-                  Subscribers would use Ekko-operated relay servers for faster
+                  Subscribers would use Ekko Chat-operated relay servers for faster
                   delivery, offline message queuing, and improved reliability.
                 </p>
                 <p className="text-xs font-semibold uppercase tracking-wider text-foreground mb-2">
-                  Additional data visible to Ekko
+                  Additional data visible to Ekko Chat
                 </p>
                 <ul className="space-y-1.5">
                   <li className="flex items-start gap-2 text-sm text-muted">
                     <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 mt-1.5 shrink-0" />
-                    Your device&apos;s IP address when connecting to Ekko relay servers
+                    Your device&apos;s IP address when connecting to Ekko Chat relay servers
                   </li>
                   <li className="flex items-start gap-2 text-sm text-muted">
                     <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 mt-1.5 shrink-0" />
@@ -469,7 +469,7 @@ export default function PrivacyPage() {
                   </li>
                   <li className="flex items-start gap-2 text-sm text-muted">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-1.5 shrink-0" />
-                    User identities — Ekko sees Endpoint IDs but does not have a mapping to real-world identities
+                    User identities — Ekko Chat sees Endpoint IDs but does not have a mapping to real-world identities
                   </li>
                 </ul>
               </div>
@@ -480,7 +480,7 @@ export default function PrivacyPage() {
               <p className="text-sm text-muted leading-relaxed">
                 Managed services are entirely optional. All five transports and all
                 encryption features work without a subscription. Subscribing trades
-                some metadata visibility to Ekko-operated infrastructure in exchange
+                some metadata visibility to Ekko Chat-operated infrastructure in exchange
                 for speed and reliability improvements. You can switch between the
                 free decentralized tier and managed services at any time.
               </p>
@@ -494,7 +494,7 @@ export default function PrivacyPage() {
               Third-Party Services
             </h2>
             <p className="text-muted leading-relaxed mb-6">
-              Ekko does not operate most of the infrastructure that carries your
+              Ekko Chat does not operate most of the infrastructure that carries your
               messages. The following third-party services are involved depending on
               which transport is active:
             </p>
@@ -506,7 +506,7 @@ export default function PrivacyPage() {
                 },
                 {
                   service: "Tor Network",
-                  desc: "A volunteer-operated anonymity network and its directory authorities. Ekko does not operate any Tor relays or directory servers.",
+                  desc: "A volunteer-operated anonymity network and its directory authorities. Ekko Chat does not operate any Tor relays or directory servers.",
                 },
                 {
                   service: "n0.computer (iroh)",
@@ -528,7 +528,7 @@ export default function PrivacyPage() {
             </div>
             <p className="text-sm text-muted mt-4 leading-relaxed">
               Each of these services has its own privacy policy and data practices.
-              Ekko&apos;s end-to-end encryption ensures that none of them can read your
+              Ekko Chat&apos;s end-to-end encryption ensures that none of them can read your
               message content, but they may log connection metadata according to
               their own policies.
             </p>
@@ -542,7 +542,7 @@ export default function PrivacyPage() {
             </h2>
             <div className="space-y-4 text-muted leading-relaxed">
               <p>
-                Ekko does not retain any user data on servers we control (outside of
+                Ekko Chat does not retain any user data on servers we control (outside of
                 planned managed services described above). For the decentralized
                 transports:
               </p>
@@ -575,10 +575,10 @@ export default function PrivacyPage() {
             </h2>
             <div className="space-y-4 text-muted leading-relaxed">
               <p>
-                Ekko&apos;s architecture means we have very little to provide in response
+                Ekko Chat&apos;s architecture means we have very little to provide in response
                 to legal requests. We do not have access to message content, contact
                 lists, or communication metadata for free-tier users. We cannot
-                identify users because Ekko does not require accounts or collect
+                identify users because Ekko Chat does not require accounts or collect
                 personally identifiable information.
               </p>
               <p>
@@ -597,7 +597,7 @@ export default function PrivacyPage() {
             </h2>
             <div className="space-y-4 text-muted leading-relaxed">
               <p>
-                We will update this policy as Ekko evolves — particularly as managed
+                We will update this policy as Ekko Chat evolves — particularly as managed
                 services are introduced. Material changes will be communicated
                 through the app and on this page. The &ldquo;last updated&rdquo; date
                 at the top of this page reflects the most recent revision.

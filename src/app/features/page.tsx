@@ -11,7 +11,7 @@ const featureGroups = [
     features: [
       {
         name: "Encrypted Text Messaging",
-        desc: "Every message is encrypted end-to-end with ChaCha20-Poly1305. There is no Ekko server that could read your messages.",
+        desc: "Every message is encrypted end-to-end with ChaCha20-Poly1305. There is no Ekko Chat server that could read your messages.",
       },
       {
         name: "File & Photo Sharing",
@@ -105,7 +105,7 @@ const featureGroups = [
       },
       {
         name: "BLE Mesh Gossip",
-        desc: "Devices relay encrypted messages for others. Extends Ekko's reach into areas with spotty connectivity.",
+        desc: "Devices relay encrypted messages for others. Extends Ekko Chat's reach into areas with spotty connectivity.",
       },
     ],
   },
@@ -124,7 +124,7 @@ export default function FeaturesPage() {
               Built for <span className="gradient-text">Privacy</span>
             </h1>
             <p className="mt-6 text-lg text-muted max-w-2xl leading-relaxed">
-              Every feature in Ekko is designed around a single principle: your
+              Every feature in Ekko Chat is designed around a single principle: your
               communication belongs to you. No compromises, no trade-offs on
               security.
             </p>

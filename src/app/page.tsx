@@ -143,7 +143,7 @@ export default function Home() {
                 href="/download"
                 className="px-8 py-3.5 text-base font-semibold rounded-full bg-gradient-to-r from-accent-cyan to-accent-blue text-background hover:shadow-lg hover:shadow-accent-cyan/25 transition-all hover:scale-[1.02] active:scale-[0.98]"
               >
-                Download Ekko
+                Download Ekko Chat
               </Link>
               <Link
                 href="/docs"
@@ -165,7 +165,7 @@ export default function Home() {
             </h2>
             <p className="mt-4 text-muted text-lg max-w-2xl mx-auto">
               From fully peer-to-peer connections like BLE to lightweight relay services,
-              Ekko automatically selects the best available path. You never need to run a server—your messages always find a way.
+              Ekko Chat automatically selects the best available path. You never need to run a server—your messages always find a way.
             </p>
           </AnimatedSection>
 
@@ -223,7 +223,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6">
           <AnimatedSection className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
-              How Ekko <span className="gradient-text">Compares</span>
+              How Ekko Chat <span className="gradient-text">Compares</span>
             </h2>
           </AnimatedSection>
 
@@ -234,7 +234,7 @@ export default function Home() {
                   <thead>
                     <tr>
                       <th>Feature</th>
-                      <th className="!text-accent-cyan">Ekko</th>
+                      <th className="!text-accent-cyan">Ekko Chat</th>
                       <th>WhatsApp</th>
                       <th>Signal</th>
                       <th>iMessage</th>
@@ -268,14 +268,14 @@ export default function Home() {
               Take Back Your <span className="gradient-text">Conversations</span>
             </h2>
             <p className="text-muted text-lg mb-10 max-w-xl mx-auto">
-              Install Ekko. Your identity is generated automatically. Meet a
+              Install Ekko Chat. Your identity is generated automatically. Meet a
               contact, scan QR codes, and start messaging. No sign-up needed.
             </p>
             <Link
               href="/download"
               className="inline-flex px-10 py-4 text-lg font-semibold rounded-full bg-gradient-to-r from-accent-cyan to-accent-purple text-background hover:shadow-xl hover:shadow-accent-cyan/20 transition-all hover:scale-[1.02] active:scale-[0.98]"
             >
-              Get Ekko Now
+              Get Ekko Chat Now
             </Link>
           </AnimatedSection>
         </div>

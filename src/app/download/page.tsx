@@ -43,7 +43,7 @@ const platforms = [
 const steps = [
   {
     num: "01",
-    title: "Install Ekko",
+    title: "Install Ekko Chat",
     desc: "Download from your app store. No account creation, no email verification.",
   },
   {
@@ -59,7 +59,7 @@ const steps = [
   {
     num: "04",
     title: "Start Messaging",
-    desc: "Ekko automatically selects the best transport. Your messages are encrypted end-to-end, always.",
+    desc: "Ekko Chat automatically selects the best transport. Your messages are encrypted end-to-end, always.",
   },
 ];
 
@@ -75,7 +75,7 @@ export default function DownloadPage() {
         <div className="relative max-w-7xl mx-auto px-6 pt-20 pb-16 md:pt-32 md:pb-24 text-center">
           <AnimatedSection>
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">
-              Get <span className="gradient-text">Ekko</span>
+              Get <span className="gradient-text">Ekko Chat</span>
             </h1>
             <p className="mt-6 text-lg text-muted max-w-xl mx-auto leading-relaxed">
               Available on iOS, Android, and macOS. Windows coming soon. No

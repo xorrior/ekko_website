@@ -61,7 +61,7 @@ export default function TransportSecurityPage() {
               Transport <span className="gradient-text">Security</span>
             </h1>
             <p className="mt-4 text-muted max-w-2xl leading-relaxed">
-              Complete technical documentation of Ekko&apos;s cryptographic architecture,
+              Complete technical documentation of Ekko Chat&apos;s cryptographic architecture,
               transport-level security, and attack surface analysis.
             </p>
             <p className="mt-2 text-sm text-muted">Version 1.0 &middot; March 2026</p>
@@ -95,7 +95,7 @@ export default function TransportSecurityPage() {
             {/* ─── OVERVIEW ─── */}
             <DocSection title="Overview" id="overview">
               <p className="text-muted leading-relaxed mb-6">
-                Ekko is a censorship-resistant messaging application that delivers messages
+                Ekko Chat is a censorship-resistant messaging application that delivers messages
                 through multiple independent transport channels. All transports share a common
                 application-level encryption layer.
               </p>
