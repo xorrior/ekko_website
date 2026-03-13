@@ -11,6 +11,7 @@ const navLinks = [
   { href: "/features", label: "Features" },
   { href: "/docs", label: "Docs" },
   { href: "/download", label: "Download" },
+  { href: "/support", label: "Support" },
 ];
 
 export default function Navbar() {
