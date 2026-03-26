@@ -38,9 +38,14 @@ const transportOverview = [
     detail: "Each device creates a hidden address that's only reachable through Tor. Messages travel through three layers of encryption across different countries.",
   },
   {
-    name: "Quick Relay (iroh)",
+    name: "QUIC P2P (iroh)",
     desc: "Some networks block direct connections. Ekko Chat uses QUIC to punch through barriers and establish a direct peer-to-peer link.",
     detail: "Devices exchange small endpoint IDs through the decentralized network, then connect directly using a protocol faster and more reliable than traditional connections.",
+  },
+  {
+    name: "Private Relay",
+    desc: "For always-on delivery, you can subscribe to a private relay server. Messages are stored encrypted and pushed to your device the moment you come online.",
+    detail: "The relay sees only ciphertext — it cannot read your messages. You can invite contacts to share your relay for faster mutual delivery. Messages queue while you're offline and deliver instantly when you reconnect.",
   },
   {
     name: "Mesh Relay (BLE Gossip)",
@@ -62,12 +67,12 @@ const roadmap = [
   },
   {
     title: "Relay Subscription Service",
-    status: "Planned",
+    status: "Available",
     features: [
       "Dedicated high-availability relay infrastructure",
       "Offline message queuing with E2E encryption",
-      "Faster delivery approaching centralized messenger speeds",
-      "Geographic distribution for low-latency connections",
+      "Push-based delivery for near-instant message receipt",
+      "Invite contacts to share your relay for faster mutual delivery",
     ],
   },
 ];
@@ -145,7 +150,7 @@ export default function DocsPage() {
               How Messages Travel
             </h2>
             <p className="mt-4 text-muted">
-              Ekko Chat uses five different communication paths to deliver your
+              Ekko Chat uses six different communication paths to deliver your
               messages. The app automatically selects the best available path.
             </p>
           </AnimatedSection>
@@ -240,7 +245,11 @@ export default function DocsPage() {
                   <div className="relative h-full p-6 rounded-2xl bg-surface">
                     <div className="flex items-center gap-3 mb-4">
                       <h3 className="font-bold text-lg">{item.title}</h3>
-                      <span className="px-2 py-0.5 rounded-full bg-accent-purple/10 text-accent-purple text-xs font-medium">
+                      <span className={`px-2 py-0.5 rounded-full text-xs font-medium ${
+                        item.status === "Available"
+                          ? "bg-emerald-400/10 text-emerald-400"
+                          : "bg-accent-purple/10 text-accent-purple"
+                      }`}>
                         {item.status}
                       </span>
                     </div>

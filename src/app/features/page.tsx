@@ -100,8 +100,12 @@ const featureGroups = [
         desc: "Direct .onion-to-.onion connections through 3 encrypted hops. Maximum anonymity — no IP addresses revealed.",
       },
       {
-        name: "QUIC Relay (iroh)",
-        desc: "NAT-busting P2P connections using modern QUIC protocol. Punches through corporate firewalls and strict carriers.",
+        name: "QUIC P2P (iroh)",
+        desc: "NAT-busting peer-to-peer connections using modern QUIC protocol. Punches through corporate firewalls and strict carriers.",
+      },
+      {
+        name: "Private Relay",
+        desc: "Always-on push delivery through your private encrypted relay server. Messages queue while you're offline and deliver instantly when you reconnect.",
       },
       {
         name: "BLE Mesh Gossip",

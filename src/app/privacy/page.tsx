@@ -113,7 +113,7 @@ export default function PrivacyPage() {
               What Each Transport Exposes
             </h2>
             <p className="text-muted leading-relaxed mb-8">
-              Ekko Chat uses five transport paths to deliver messages. While message
+              Ekko Chat uses six transport paths to deliver messages. While message
               content is always encrypted end-to-end regardless of transport, the
               networks themselves can observe different types of metadata. Here is
               an honest breakdown of what each path exposes.
@@ -262,10 +262,10 @@ export default function PrivacyPage() {
                 </div>
               </div>
 
-              {/* iroh / QUIC Relay */}
+              {/* iroh / QUIC P2P */}
               <div className="rounded-2xl bg-surface border border-border p-6">
                 <h3 className="text-lg font-semibold text-accent-cyan mb-3">
-                  QUIC Relay (iroh)
+                  QUIC P2P (iroh)
                 </h3>
                 <p className="text-sm text-muted leading-relaxed mb-4">
                   Ekko Chat uses the iroh protocol (from n0.computer) for QUIC-based
@@ -308,6 +308,60 @@ export default function PrivacyPage() {
                 <p className="text-sm text-muted leading-relaxed mt-4 p-3 rounded-lg bg-background border border-border">
                   When a direct peer-to-peer connection succeeds via hole-punching,
                   no relay is involved and no third party sees any traffic.
+                </p>
+              </div>
+
+              {/* Private Relay */}
+              <div className="rounded-2xl bg-surface border border-border p-6">
+                <h3 className="text-lg font-semibold text-accent-cyan mb-3">
+                  Private Relay
+                </h3>
+                <p className="text-sm text-muted leading-relaxed mb-4">
+                  An optional subscription service that provides always-on push delivery
+                  through a dedicated relay server. Messages are stored encrypted on the
+                  relay and pushed to your device the moment you reconnect. The relay
+                  operator cannot read message content.
+                </p>
+                <div className="space-y-2">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-foreground">
+                    What is visible to the relay server
+                  </p>
+                  <ul className="space-y-1.5">
+                    <li className="flex items-start gap-2 text-sm text-muted">
+                      <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 mt-1.5 shrink-0" />
+                      Your IP address when connecting to the relay
+                    </li>
+                    <li className="flex items-start gap-2 text-sm text-muted">
+                      <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 mt-1.5 shrink-0" />
+                      Message sizes, timing, and volume
+                    </li>
+                    <li className="flex items-start gap-2 text-sm text-muted">
+                      <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 mt-1.5 shrink-0" />
+                      Which relay members are online or offline
+                    </li>
+                  </ul>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-foreground mt-4">
+                    What is protected
+                  </p>
+                  <ul className="space-y-1.5">
+                    <li className="flex items-start gap-2 text-sm text-muted">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-1.5 shrink-0" />
+                      Message content (end-to-end encrypted — relay sees only ciphertext)
+                    </li>
+                    <li className="flex items-start gap-2 text-sm text-muted">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-1.5 shrink-0" />
+                      Sender and recipient identities (relay does not map cryptographic keys to real-world identities)
+                    </li>
+                    <li className="flex items-start gap-2 text-sm text-muted">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-1.5 shrink-0" />
+                      Contact lists and social graph (relay only knows its own member list)
+                    </li>
+                  </ul>
+                </div>
+                <p className="text-sm text-muted leading-relaxed mt-4 p-3 rounded-lg bg-background border border-border">
+                  The relay service is entirely optional. All free-tier transports
+                  (BLE, DHT, Tor, QUIC P2P, Mesh Gossip) remain fully functional
+                  without a subscription.
                 </p>
               </div>
 
@@ -478,7 +532,7 @@ export default function PrivacyPage() {
             <div className="mt-6 rounded-2xl bg-background border border-border p-6">
               <h3 className="font-semibold mb-3">The free tier remains fully functional</h3>
               <p className="text-sm text-muted leading-relaxed">
-                Managed services are entirely optional. All five transports and all
+                Managed services are entirely optional. All six transports and all
                 encryption features work without a subscription. Subscribing trades
                 some metadata visibility to Ekko Chat-operated infrastructure in exchange
                 for speed and reliability improvements. You can switch between the

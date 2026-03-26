@@ -35,11 +35,20 @@ const transports = [
     ),
   },
   {
-    name: "QUIC Relay",
-    desc: "NAT-busting P2P connections. Punches through firewalls.",
+    name: "QUIC P2P",
+    desc: "NAT-busting peer-to-peer connections. Punches through firewalls.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6">
         <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
+  {
+    name: "Private Relay",
+    desc: "Always-on push delivery through your encrypted relay server. Messages queue while you're offline.",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6">
+        <path d="M22 12h-4l-3 9L9 3l-3 9H2" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -161,15 +170,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
-              Five Paths. <span className="gradient-text">No Infrastructure Required.</span>
+              Six Paths. <span className="gradient-text">Your Message Always Gets Through.</span>
             </h2>
             <p className="mt-4 text-muted text-lg max-w-2xl mx-auto">
-              From fully peer-to-peer connections like BLE to lightweight relay services,
-              Ekko Chat automatically selects the best available path. You never need to run a server—your messages always find a way.
+              If one path is blocked, your message finds another way through. From offline Bluetooth to anonymous Tor routing to always-on relay servers, Ekko Chat tries every available path automatically.
             </p>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {transports.map((t, i) => (
               <AnimatedSection key={t.name} delay={i * 0.1}>
                 <motion.div
