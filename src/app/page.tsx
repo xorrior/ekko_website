@@ -27,7 +27,7 @@ const transports = [
   },
   {
     name: "Tor Onion",
-    desc: "Anonymous connections through 3 encrypted hops. IP addresses hidden.",
+    desc: "Private connections through 3 encrypted hops. IP addresses hidden.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" strokeLinecap="round" strokeLinejoin="round" />
@@ -94,7 +94,7 @@ const comparisonData = [
   { feature: "Metadata Protection", ekko: "Yes", whatsapp: "No", signal: "Partial", imessage: "No" },
   { feature: "Works Offline", ekko: "Yes (BLE)", whatsapp: "No", signal: "No", imessage: "No" },
   { feature: "Mesh Networking", ekko: "Yes", whatsapp: "No", signal: "No", imessage: "No" },
-  { feature: "Anonymous Routing", ekko: "Yes (Tor)", whatsapp: "No", signal: "No", imessage: "No" },
+  { feature: "Private Routing", ekko: "Yes (Tor)", whatsapp: "No", signal: "No", imessage: "No" },
 ];
 
 export default function Home() {
@@ -138,7 +138,7 @@ export default function Home() {
               className="mt-8 text-lg md:text-xl text-muted max-w-2xl mx-auto leading-relaxed"
             >
               Messages travel directly between devices through Bluetooth, the
-              internet, and anonymous networks. No servers. No accounts. No data
+              internet, and private networks. No servers. No accounts. No data
               collection.
             </motion.p>
 
@@ -173,7 +173,7 @@ export default function Home() {
               Six Paths. <span className="gradient-text">Your Message Always Gets Through.</span>
             </h2>
             <p className="mt-4 text-muted text-lg max-w-2xl mx-auto">
-              If one path is blocked, your message finds another way through. From offline Bluetooth to anonymous Tor routing to always-on relay servers, Ekko Chat tries every available path automatically.
+              If one path is blocked, your message finds another way through. From offline Bluetooth to private Tor routing to always-on relay servers, Ekko Chat tries every available path automatically.
             </p>
           </AnimatedSection>
 

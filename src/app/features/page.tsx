@@ -97,7 +97,7 @@ const featureGroups = [
       },
       {
         name: "Tor Onion Routing",
-        desc: "Direct .onion-to-.onion connections through 3 encrypted hops. Maximum anonymity — no IP addresses revealed.",
+        desc: "Direct .onion-to-.onion connections through 3 encrypted hops. Maximum privacy — no IP addresses revealed.",
       },
       {
         name: "QUIC P2P (iroh)",

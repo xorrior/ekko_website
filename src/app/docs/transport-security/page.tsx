@@ -107,7 +107,7 @@ export default function TransportSecurityPage() {
                   {[
                     { label: "BLE", color: "bg-accent-cyan", desc: "Fastest" },
                     { label: "iroh", color: "bg-accent-blue", desc: "NAT punch" },
-                    { label: "Tor", color: "bg-accent-purple", desc: "Anonymous" },
+                    { label: "Tor", color: "bg-accent-purple", desc: "Private" },
                     { label: "DHT", color: "bg-amber-400", desc: "Fallback" },
                   ].map((t, i) => (
                     <div key={t.label} className="flex items-center gap-2">
