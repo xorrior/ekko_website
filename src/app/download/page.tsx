@@ -27,17 +27,6 @@ const platforms = [
       </svg>
     ),
   },
-  {
-    name: "macOS",
-    subtitle: "Native desktop app",
-    storeLabel: "Download for Mac",
-    storeUrl: "#",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10">
-        <path d="M4 4h16a2 2 0 012 2v10a2 2 0 01-2 2h-6l1 2h2v1H7v-1h2l1-2H4a2 2 0 01-2-2V6a2 2 0 012-2zm0 2v10h16V6H4z" />
-      </svg>
-    ),
-  },
 ];
 
 const steps = [
@@ -78,8 +67,8 @@ export default function DownloadPage() {
               Get <span className="gradient-text">Ekko Chat</span>
             </h1>
             <p className="mt-6 text-lg text-muted max-w-xl mx-auto leading-relaxed">
-              Available on iOS, Android, and macOS. Windows coming soon. No
-              account needed — install and start messaging.
+              Available on iOS and Android. No account needed — install and
+              start messaging.
             </p>
           </AnimatedSection>
         </div>
@@ -88,7 +77,7 @@ export default function DownloadPage() {
       {/* Platform Cards */}
       <section className="py-12 md:py-20">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {platforms.map((p, i) => (
               <AnimatedSection key={p.name} delay={i * 0.12}>
                 <motion.a
@@ -114,13 +103,6 @@ export default function DownloadPage() {
               </AnimatedSection>
             ))}
           </div>
-
-          <AnimatedSection delay={0.4} className="mt-8 text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent-purple/20 bg-accent-purple/5 text-accent-purple text-sm">
-              <span className="w-2 h-2 rounded-full bg-accent-purple animate-pulse" />
-              Windows version in development
-            </div>
-          </AnimatedSection>
         </div>
       </section>
 

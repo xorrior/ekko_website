@@ -175,28 +175,22 @@ export default function FeaturesPage() {
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold">
-              <span className="gradient-text">Cross-Platform</span>
+              <span className="gradient-text">Supported Platforms</span>
             </h2>
-            <p className="mt-4 text-muted text-lg">Available everywhere you need it.</p>
+            <p className="mt-4 text-muted text-lg">Available on the mobile platforms Ekko supports today.</p>
           </AnimatedSection>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
             {[
               { name: "iOS", status: "Available", icon: "iPhone & iPad" },
               { name: "Android", status: "Available", icon: "All devices" },
-              { name: "macOS", status: "Available", icon: "Native app" },
-              { name: "Windows", status: "Coming Soon", icon: "In development" },
             ].map((p, i) => (
               <AnimatedSection key={p.name} delay={i * 0.1}>
                 <div className="p-6 rounded-2xl bg-surface border border-border text-center">
                   <h3 className="text-lg font-bold mb-1">{p.name}</h3>
                   <p className="text-xs text-muted mb-2">{p.icon}</p>
                   <span
-                    className={`inline-block px-3 py-1 rounded-full text-xs font-medium ${
-                      p.status === "Available"
-                        ? "bg-accent-cyan/10 text-accent-cyan"
-                        : "bg-accent-purple/10 text-accent-purple"
-                    }`}
+                    className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-accent-cyan/10 text-accent-cyan"
                   >
                     {p.status}
                   </span>

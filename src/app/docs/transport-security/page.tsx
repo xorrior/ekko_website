@@ -473,10 +473,9 @@ export default function TransportSecurityPage() {
 
               {/* Platform grid */}
               <h3 className="text-lg font-semibold mt-8 mb-3">Platform Implementation</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
                 {[
                   { platform: "iOS", framework: "Tor.framework", method: "ADD_ONION via control port" },
-                  { platform: "macOS", framework: "Tor.framework", method: "ADD_ONION via control port" },
                   { platform: "Android", framework: "tor_hidden_service", method: "Automatic" },
                 ].map((p) => (
                   <div key={p.platform} className="p-4 rounded-xl bg-surface border border-border text-center">
